@@ -1,0 +1,8 @@
+<vue-gwt:import class="com.axellience.client.Todo"/>
+<div>
+    <todo-list :todis="elements">
+    	Todo list:
+    </todo-list>
+    <input type="text" v-model="message" @keyup.enter="addElement">
+    <button v-on:click="addElement">Add</button>
+</div>

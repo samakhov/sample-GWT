@@ -1,0 +1,7 @@
+<vue-gwt:import class="com.axellience.client.Todo"/>
+<div>
+	<strong><slot></slot></strong>
+    <ol>
+        <todo v-for="Todo tido in todis" v-bind:todo="tido"></todo>
+    </ol>
+</div>

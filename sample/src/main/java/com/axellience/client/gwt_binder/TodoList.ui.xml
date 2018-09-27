@@ -1,0 +1,12 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' 
+			 xmlns:gwt="urn:import:com.google.gwt.user.client.ui">
+  <gwt:HTMLPanel>
+    Hello, <span ui:field='nameSpan'/>.
+    
+    <gwt:HorizontalPanel>
+    	<gwt:Label ui:field="duc">Keep your ducks</gwt:Label>
+    	<gwt:Label>in a row</gwt:Label>
+  	</gwt:HorizontalPanel>
+    
+  </gwt:HTMLPanel>
+</ui:UiBinder>
