@@ -3,6 +3,8 @@
     <todo-list :todis="elements">
     	Todo list:
     </todo-list>
-    <input type="text" v-model="message" @keyup.enter="addElement">
-    <button v-on:click="addElement">Add</button>
+    <div class="ui input focus">
+    	<input type="text" v-model="message" @keyup.enter="addElement"/>
+    </div>
+    <button v-on:click="addElement" class="ui secondary button">Add</button>
 </div>

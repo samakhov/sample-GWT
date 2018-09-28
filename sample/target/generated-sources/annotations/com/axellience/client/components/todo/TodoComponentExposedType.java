@@ -39,7 +39,7 @@ public class TodoComponentExposedType extends TodoComponent {
   }
 
   private Function getRenderFunction() {
-    String renderFunctionString = "with(this){return _c('div',[_c('li',[_v(\"\\n    \\t\"+_s(exp$0())+\"\\n\\t\")]),_v(\" \"),_c('button',{on:{\"click\":removeElement}},[_v(\"rm\")])])}";
+    String renderFunctionString = "with(this){return _c('div',{staticClass:\"ui two column grid\"},[_c('li',{staticClass:\"twelve wide column\"},[_v(\"\\n    \\t\"+_s(exp$0())+\"\\n\\t\")]),_v(\" \"),_c('div',{staticClass:\"four wide column \"},[_c('button',{staticClass:\"circular ui icon button\",on:{\"click\":removeElement}},[_c('i',{staticClass:\"times circle icon\"})])])])}";
     return new Function(renderFunctionString);
   }
 

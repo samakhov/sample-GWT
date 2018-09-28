@@ -19,7 +19,7 @@ import jsinterop.base.JsPropertyMap;
 @Singleton
 @Generated(
     value = "com.axellience.vuegwt.processors.component.factory.VueComponentFactoryGenerator",
-    date = "Thu Sep 27 16:31:07 CEST 2018",
+    date = "Fri Sep 28 10:20:13 CEST 2018",
     comments = "https://github.com/Axellience/vue-gwt"
 )
 public final class SubmitComponentFactory extends VueComponentFactory<SubmitComponent> {

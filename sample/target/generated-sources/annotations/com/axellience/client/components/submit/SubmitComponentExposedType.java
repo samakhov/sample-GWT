@@ -41,7 +41,7 @@ public class SubmitComponentExposedType extends SubmitComponent {
   }
 
   private Function getRenderFunction() {
-    String renderFunctionString = "with(this){return _c('div',[_c('todo-list',{attrs:{\"todis\":exp$0()}},[_v(\"\\n    \\tTodo list:\\n    \")]),_v(\" \"),_c('input',{directives:[{name:\"model\",rawName:\"v-model\",value:(message__vuegwt__vmodel),expression:\"message__vuegwt__vmodel\"}],attrs:{\"type\":\"text\"},domProps:{\"value\":(message__vuegwt__vmodel)},on:{\"keyup\":function($event){if(!('button' in $event)&&_k($event.keyCode,\"enter\",13,$event.key,\"Enter\"))return null;return addElement($event)},\"input\":function($event){if($event.target.composing)return;message__vuegwt__vmodel=$event.target.value}}}),_v(\" \"),_c('button',{on:{\"click\":addElement}},[_v(\"Add\")])],1)}";
+    String renderFunctionString = "with(this){return _c('div',[_c('todo-list',{attrs:{\"todis\":exp$0()}},[_v(\"\\n    \\tTodo list:\\n    \")]),_v(\" \"),_c('div',{staticClass:\"ui input focus\"},[_c('input',{directives:[{name:\"model\",rawName:\"v-model\",value:(message__vuegwt__vmodel),expression:\"message__vuegwt__vmodel\"}],attrs:{\"type\":\"text\"},domProps:{\"value\":(message__vuegwt__vmodel)},on:{\"keyup\":function($event){if(!('button' in $event)&&_k($event.keyCode,\"enter\",13,$event.key,\"Enter\"))return null;return addElement($event)},\"input\":function($event){if($event.target.composing)return;message__vuegwt__vmodel=$event.target.value}}})]),_v(\" \"),_c('button',{staticClass:\"ui secondary button\",on:{\"click\":addElement}},[_v(\"Add\")])],1)}";
     renderFunctionString = VueGWTTools.replaceVariableInRenderFunction(renderFunctionString, "message__vuegwt__vmodel", this, () -> this.message = null);
     return new Function(renderFunctionString);
   }
@@ -64,9 +64,8 @@ public class SubmitComponentExposedType extends SubmitComponent {
     options.addMethod("addElement", p.addElement);
     options.addHookMethod("created", p.vg$created);
     options.initData(true, VueGWTTools.getFieldsName(this, () -> {
-      this.elements = null;
       this.message = null;
-      this.y = 1;
+      this.elements = null;
     } ));
     options.registerTemplateMethods(p.exp$0);
     options.initRenderFunctions(getRenderFunction(), getStaticRenderFunctions());
@@ -75,10 +74,9 @@ public class SubmitComponentExposedType extends SubmitComponent {
 
   @JsMethod
   void vg$ef() {
-    this.elements = FieldsExposer.v();
     this.message = FieldsExposer.v();
-    this.y = FieldsExposer.v();
-    FieldsExposer.e(elements,message,y);
+    this.elements = FieldsExposer.v();
+    FieldsExposer.e(message,elements);
   }
 
   @JsType(

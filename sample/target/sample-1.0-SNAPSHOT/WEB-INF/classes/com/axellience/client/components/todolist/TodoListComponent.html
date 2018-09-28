@@ -1,7 +1,7 @@
 <vue-gwt:import class="com.axellience.client.Todo"/>
-<div>
-	<strong><slot></slot></strong>
-    <ol>
+<div class="ui one column grid">
+	<strong><slot name="title"></slot></strong>
+    <ol class="ui list six wide column">
         <todo v-for="Todo tido in todis" v-bind:todo="tido"></todo>
     </ol>
 </div>

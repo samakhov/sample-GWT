@@ -19,7 +19,7 @@ import jsinterop.base.JsPropertyMap;
 @Singleton
 @Generated(
     value = "com.axellience.vuegwt.processors.component.factory.VueComponentFactoryGenerator",
-    date = "Thu Sep 27 16:37:26 CEST 2018",
+    date = "Fri Sep 28 11:13:48 CEST 2018",
     comments = "https://github.com/Axellience/vue-gwt"
 )
 public final class TodoListComponentFactory extends VueComponentFactory<TodoListComponent> {

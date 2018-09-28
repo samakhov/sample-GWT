@@ -1,7 +1,11 @@
-<div>
-	<li>
+<div class="ui two column grid">
+	<li class="twelve wide column">
     	{{ todo.getText() }}
 	</li>
 	
-	<button v-on:click="removeElement">rm</button>
+	<div class="four wide column ">
+		<button class="circular ui icon button" v-on:click="removeElement">
+			<i class="times circle icon"></i>
+		</button>
+	</div>
 </div>

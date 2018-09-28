@@ -16,6 +16,6 @@ public class TodoComponent implements IsVueComponent
     @JsMethod
     public void removeElement()
     {
-
+        vue().$el().remove();
     }
 }

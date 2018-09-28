@@ -48,7 +48,7 @@ public class TodoListComponentExposedType extends TodoListComponent {
   }
 
   private Function getRenderFunction() {
-    String renderFunctionString = "with(this){return _c('div',[_c('strong',[_t(\"default\")],2),_v(\" \"),_c('ol',_l((exp$0()),function(tido){return _c('todo',{attrs:{\"todo\":exp$1(tido)}})}))])}";
+    String renderFunctionString = "with(this){return _c('div',{staticClass:\"ui one column grid\"},[_c('strong',[_t(\"title\")],2),_v(\" \"),_c('ol',{staticClass:\"ui list six wide column\"},_l((exp$0()),function(tido){return _c('todo',{attrs:{\"todo\":exp$1(tido)}})}))])}";
     return new Function(renderFunctionString);
   }
 

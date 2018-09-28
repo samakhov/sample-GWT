@@ -1,0 +1,38 @@
+<vue-gwt:import class={{object.getCanonicalName()}}/>
+<vue-gwt:import class="com.axellience.client.components.Todo"/>
+
+<div class="ui segments">
+	<div class="ui secondary segment">
+		<div class="ui grid">
+			<div class="fourteen wide column"> List of {{object.getSimpleName()}} </div>
+			<div class="two wide column"> 
+				<button class="ui labeled icon button">
+					<i class="plus icon"></i>
+					Add {{object.getSimpleName()}}
+				</button> 
+			</div>
+		</div>	
+	</div>
+	<div class="ui segment">
+		<table class="ui celled table">
+			<thead>
+				<tr>
+					<th v-for="String attribute in attributes">{{attribute}}</th>
+					<th v-if="operations">Operations</th>
+				</tr>
+			</thead>
+			<!--<tbody>
+				<tr v-for= "{{element}} element in elements">
+					<td data-label="{{attribute}}" v-for="String attribute in attributes">{{element.attribute}}</td>
+					<td v-if="operations">
+						<button class="circular ui icon button" v-on:click="removeElement">
+							<i class="times circle icon"></i>
+						</button>
+					</td>
+				</tr>
+			</tbody> -->
+		</table>
+
+
+	</div>
+</div>

@@ -22,9 +22,6 @@ public class SubmitComponent implements IsVueComponent
     @JsProperty
     List<Todo> elements = new LinkedList<>();
 
-    @Data
-    int y;
-
     @JsMethod
     public void addElement()
     {

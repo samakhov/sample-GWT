@@ -1,8 +1,8 @@
 package com.axellience.client;
 
-import com.axellience.client.components.johnsnow.JohnSnowComponentFactory;
-import com.axellience.client.components.reversed.ReverseComponentFactory;
-import com.axellience.client.components.submit.SubmitComponentFactory;
+import com.axellience.client.components.content.ContentComponentFactory;
+import com.axellience.client.components.menu.MenuComponentFactory;
+import com.axellience.client.components.sidebar.SidebarComponentFactory;
 import com.axellience.client.components.todo.TodoComponentFactory;
 import com.axellience.client.gwt_binder.ListElementBinder;
 import com.axellience.vuegwt.core.client.Vue;
@@ -25,26 +25,26 @@ public class Sample implements EntryPoint
 
         Vue.component(TodoComponentFactory.get());
 
-        Vue.attach("#simpleLinkComponentContainer", SimpleLinkComponentFactory.get());
+        // Vue.directive("#focusDirective", new FocusDirectiveOptions());
 
-        /*LinkComponent linkComponent =
-                Vue.attach("#linkComponentContainer", LinkComponentFactory.get());*/
-
+        /*Vue.attach("#simpleLinkComponentContainer", SimpleLinkComponentFactory.get());
+        
         Vue.attach("#canHideComponentContainer", CanHideComponentFactory.get());
+        
+        Vue.attach("#exclamationComponentContainer", ExclamationComponentFactory.get());*/
 
-        /*
-        Vue.attach("#todoListComponentContainer", TodoListComponentFactory.get());
-        */
+        // Vue.attach("#submitComponentContainer",
+        // SubmitComponentFactory.get());
 
-        Vue.attach("#exclamationComponentContainer", ExclamationComponentFactory.get());
+        // Vue.attach("#reverseComponentContainer",
+        // ReverseComponentFactory.get());
 
-        Vue.attach("#messageComponentContainer", MessageComponentFactory.get());
+        // Vue.attach("#johnSnowComponentContainer",
+        // JohnSnowComponentFactory.get());
 
-        Vue.attach("#submitComponentContainer", SubmitComponentFactory.get());
-
-        Vue.attach("#reverseComponentContainer", ReverseComponentFactory.get());
-
-        Vue.attach("#johnSnowComponentContainer", JohnSnowComponentFactory.get());
+        Vue.attach("#menuComponentContainer", MenuComponentFactory.get());
+        Vue.attach("#sidebarComponentContainer", SidebarComponentFactory.get());
+        Vue.attach("#contentComponentContainer", ContentComponentFactory.get());
 
         /*FlowPanel panel = new FlowPanel();
         
